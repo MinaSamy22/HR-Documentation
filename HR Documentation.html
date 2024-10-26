@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Smart HR Management System Documentation</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <style type="text/css" media="screen">
+        p, table, hr, .box { margin-bottom:25px; }
+        .box p { margin-bottom:10px; }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="center alt">&ldquo;Smart HR Management System Documentation&rdquo; by &ldquo;Mina Samy&rdquo; v1.0</h3>
+        <hr>
+
+        <h1 class="center">Smart HR Management System</h1>
+
+        <div class="borderTop">
+            <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                    <strong>
+                    Created: 25/10/2024<br>
+                    By: Mina Samy<br>
+                    Email: <a href="mailto:minasamy792@gmail.com">minasamy792@gmail.com</a>
+                    </strong>
+                </p>
+            </div>
+        </div>
+        
+        <hr>
+        <h2 id="toc" class="alt">Table of Contents</h2>
+        <ol class="alpha">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#features">Key Features</a></li>
+            <li><a href="#technologies">Technologies Used</a></li>
+            <li><a href="#cssStructure">CSS Files </a></li>
+            <li><a href="#javascript">JavaScript Files</a></li>
+            <li><a href="#blade">Blade </a></li>
+            <li><a href="#controller">Controller Files</a></li>
+            <li><a href="#model">Model Files</a></li>
+            <li><a href="#credits">Sources and Packages</a></li>
+            <li><a href="#installation">Installation Guide</a></li>
+        </ol>
+        
+        <hr>
+
+        <h3 id="overview"><strong>A) Overview</strong> - <a href="#toc">top</a></h3>
+        <p>
+            The Smart HR Management System is a comprehensive, user-friendly solution for streamlining HR processes. Designed using the AdminLTE 3 framework, it provides a modern and intuitive interface. 
+            The system is suitable for organizations of all sizes, offering tools for attendance tracking, employee management, and payroll generation.
+        </p>
+        <hr>
+
+        <h3 id="features"><strong>B) Key Features</strong> - <a href="#toc">top</a></h3>
+<ul>
+    <li><strong>Elegant User Interface:</strong> Modern dashboard with dark mode for eye comfort.</li>
+    <li><strong>Charts & Reports:</strong> Monthly performance charts showing attendance, absence, vacation data, top employees, and departmental summaries.</li>
+    <li><strong>Employee Management:</strong> Easily add, edit, and manage employee records, including attendance reports.</li>
+    <li><strong>Attendance Tracking:</strong> Track attendance manually and generate reports for present, late, and absent employees.</li>
+    <li><strong>Overtime Tracking:</strong> Calculate and track overtime hours automatically for payroll processing.</li>
+    <li><strong>Leave & Vacation Management:</strong> Organize and manage leave requests and vacation tracking in an efficient system.</li>
+    <li><strong>Payroll System:</strong> Real-time payroll management based on attendance, leaves, and overtime data.</li>
+    <li><strong>Fully Responsive:</strong> Seamless operation across mobile, tablet, and desktop devices.</li>
+    <li><strong>Dark Mode:</strong> Switch to dark mode for a sleek look and reduced eye strain during extended use.</li>
+    <li><strong>Calendar Integration:</strong> Integrated calendar to view key HR dates and deadlines easily.</li>
+    <li><strong>Full-Screen Mode:</strong> Enjoy a distraction-free experience with a full-screen option.</li>
+    <li><strong>Secure Login System:</strong> Robust authentication with easy logout functionality to ensure account security.</li>
+    <li><strong>Easy Customization:</strong> Built with Laravel, allowing for straightforward extensions and customizations to fit business needs.</li>
+</ul>
+
+        <hr>
+
+        <h3 id="technologies"><strong>C) Technologies Used</strong> - <a href="#toc">top</a></h3>
+        <ul>
+            <li><strong>Backend:</strong> Laravel 10 framework.</li>
+            <li><strong>Frontend:</strong> HTML5, CSS3, Bootstrap, JavaScript.</li>
+            <li><strong>Database:</strong> phpMyAdmin.</li>
+            <li><strong>Icons:</strong> Font Awesome for icons.</li>
+        </ul>
+
+        <hr>
+
+        <h3 id="cssStructure"><strong>D) CSS Files </strong> – <a href="#toc">Top</a></h3>
+        <p>The system utilizes multiple CSS files to maintain structure and ensure a consistent style:</p>
+        <p><strong>Path:</strong> <code>public/dist/css</code></p>
+        
+        <ul>
+            <li><strong>calendar.css</strong>: Styles the calendar interface and related components.</li>
+            <li><strong>darkmode.css</strong>: Applies styling adjustments for the dark mode throughout the system.</li>
+            <li><strong>mina.css</strong>: Provides general styles for the login page.</li>
+            <li><strong>payrollcreate.css</strong>: Handles the styling for payroll creation forms and layouts.</li>
+        </ul>
+       
+        <hr>
+
+        <h3 id="javascript"><strong>E) JavaScript Files</strong> - <a href="#toc">top</a></h3>
+        <p>The system includes three main JavaScript files:</p>
+        <p><strong>Path:</strong> <code>public/dist/js</code></p>
+        <ul>
+            <li><strong>attendance.js</strong>: Handles attendance-related visualizations .</li>
+            <li><strong>bonus.js</strong>: Manages the bonus .</li>
+            <li><strong>Chart.js</strong>: Core library used for rendering charts in the dashboard.</li>
+            <li><strong>darkmode.js</strong>: Manages dark mode functionality for charts and other elements.</li>
+            <li><strong>dashboardlist.js</strong>: Controls the display and interactions of dashboard lists.</li>
+            <li><strong>leave.js</strong>: Manages the leave.</li>
+            <li><strong>payroll.js</strong>: Manages the payroll.</li>
+            <li><strong>payrollcreate.js</strong>: Supports visual elements during payroll creation.</li>
+            <li><strong>todo.js</strong>: Manages task-related charts in the dashboard.</li>
+            <li><strong>vacation.js</strong>: Manages the vacation.</li>
+        </ul>
+
+        <hr>
+        <h3 id="blade"><strong>F) Blade </strong> - <a href="#toc">top</a></h3>
+        <p><strong>Path:</strong> <code>resources/views</code></p>
+        <ul>     
+                   <strong>(Files)</strong>
+            <li><strong>home.blade.php</strong></li>
+            <li><strong>welcome.blade.php</strong></li>
+            <li><strong>register.blade.php</strong></li>
+            <li><strong>login.blade.php</strong></li>
+            <li><strong>_message.blade.php</strong></li>
+
+        </ul>
+        <p><strong>Path:</strong> <code>resources/views/backend</code></p>
+        <ul>
+            <strong>(Folders)</strong>
+
+            <li><strong>dashboard.blade.php ->calender,charts,list,ToDo</strong></li>
+            <li><strong>employees.blade.php</strong></li>
+            <li><strong>managers.blade.php</strong></li>
+            <li><strong>departments.blade.php</strong></li>
+            <li><strong>jobss.blade.php</strong></li>
+            <li><strong>job-history.blade.php</strong></li>
+            <li><strong>layouts.blade.php</strong></li>
+            <li><strong>attendance.blade.php</strong></li>
+            <li><strong>payrolls.blade.php</strong></li>
+            <li><strong>vacations.blade.php</strong></li>
+            <li><strong>leaves.blade.php</strong></li>
+            <li><strong>bounas.blade.php</strong></li>
+            <li><strong>my-account.blade.php</strong></li>
+
+        </ul>
+
+        <hr>
+
+        <h3 id="controller"><strong>G) Controller Files</strong> - <a href="#toc">top</a></h3>
+        <p><strong>Path:</strong> <code>app/Http/Controllers</code></p>
+        <ul>
+            <li><strong>AuthController.php</strong>: Manages authentication system.</li>
+            <li><strong>DashboardController.php</strong>: Manages Dashboard and the visual charts.</li>
+            <li><strong>CalendarController.php</strong>: Manages the Calendar in the navbar .</li>
+            <li><strong>AttendanceController.php</strong>: Manages attendance-related logic.</li>
+            <li><strong>PayrollController.php</strong>: Handles payroll calculations and exports.</li>
+            <li><strong>VacationController.php</strong>: Manages employee vacations and leave.</li>
+            <li><strong>ChartsController.php</strong>: Manages the visual charts in the navbar .</li>
+            <li><strong>EmployeeeController.php</strong>: Handles user-related actions, such as registration and profile management.</li>
+            <li><strong>JobController.php</strong>: Manages the jobs .</li>
+            <li><strong>JobHistoryController.php</strong>: Manages the job history.</li>
+            <li><strong>DepartmentController.php</strong>: Manages departmental information and employee assignments.</li>
+            <li><strong>ManagerController.php</strong>: Manages managers information.</li>
+            <li><strong>LeaveController.php</strong>: Processes leave requests and maintains leave records.</li>
+            <li><strong>OverTimeController.php</strong>: Manages bonus calculations and distributions.</li>
+            <li><strong>ToDoController.php</strong>: Manages the creation, updating, and deletion of to-do tasks.</li>
+            <li><strong>MyAccountController.php</strong>: Handles the account settings, updating.</li>
+            
+        </ul>
+
+        <hr>
+
+        <h3 id="model"><strong>H) Model Files</strong> - <a href="#toc">top</a></h3>
+        <p><strong>Path:</strong> <code>app/Models</code></p>
+        <ul>
+            <li><strong>User.php</strong>: Represents employee data.</li>
+            <li><strong>Manager.php</strong>: Represents manager data.</li>
+            <li><strong>Department.php</strong>: Represents different departments within the organization.</li>
+            <li><strong>Job.php</strong>: Represents different jobs within the organization.</li>
+            <li><strong>History.php</strong>: Represents job history within the organization.</li>
+            <li><strong>Attendance.php</strong>: Tracks employee attendance records.</li>
+            <li><strong>Leave.php</strong>: Handles employee leave requests.</li>
+            <li><strong>Vacation.php</strong>: Manages vacation data for employees.</li>
+            <li><strong>Time.php</strong>: Stores overtime hours (bonus) for payroll processing.</li>
+            <li><strong>Payroll.php</strong>: Stores payroll-related records.</li>
+            <li><strong>Task.php</strong>: Manages task-related entries for the to-do list feature.</li>
+        </ul>
+
+        <hr>
+
+        <h3 id="credits"><strong>I) Sources and Packages</strong> - <a href="#toc">top</a></h3>
+        <ul>
+            <li><strong>Icons:</strong> Font Awesome</li>
+            <li><strong>Admin Template:</strong> AdminLTE 3</li>
+            <li><strong>Framework:</strong> Laravel 10</li>
+            <li><strong>PDF Export Library:</strong> DomPDF</li>
+            <li><strong>Excel Export Library:</strong> maatwebsite</li>
+        </ul>
+
+        <hr>
+
+
+        <h3 id="installation"><strong>J) Installation Guide</strong> - <a href="#toc">top</a></h3>
+        <ol>
+            <p>Follow these clear, step-by-step installation instructions to set up your HR system:</p>
+            <ol>
+                <li><strong>Download the Source Code:</strong> Download the ZIP file containing the source code of the HR system.</li>
+                <li><strong>Set Up Environment:</strong>
+                    <ol>
+                        <li><strong>Create a Database:</strong> Use your preferred database management tool (e.g., phpMyAdmin) to create a new database for the application.</li>
+                        <li><strong>Configure the .env File:</strong> Locate the .env file in the source code and update the database name and other relevant environment variables (database credentials).</li>
+                    </ol>
+                </li>
+                <li><strong>Install Dependencies:</strong>
+                    <p>Open your terminal and navigate to the project directory, then run the following command:</p>
+                    <pre>composer install</pre>
+                </li>
+                <li><strong>Run Migrations and Seeders:</strong>
+                    <p>After installing dependencies, execute the following command in the command line interface (CLI) of the project:</p>
+                    <pre>php artisan migrate --seed</pre>
+                </li>
+                <li><strong>Serve the Application:</strong>
+                    <p>Start the Laravel development server with:</p>
+                    <pre>php artisan serve</pre>
+                </li>
+                <li><strong>Access the Application:</strong>
+                    <p>Open your web browser and navigate to:</p>
+                    <pre>http://127.0.0.1:8000</pre>
+                </li>
+                <li><strong>Register New Member:</strong> After accessing the application, make sure to register a new member, then log in.</li>
+            </ol>
+            
+            <hr>
