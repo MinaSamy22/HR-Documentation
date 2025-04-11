@@ -46,6 +46,7 @@
             <li><a href="#model">Model Files</a></li>
             <li><a href="#credits">Sources and Packages</a></li>
             <li><a href="#installation">Installation Guide</a></li>
+            <li><a href="#use">User Guide</a></li>
         </ol>
         
         <hr>
@@ -58,6 +59,7 @@
 
         <h3 id="features"><strong>B) Key Features</strong> - <a href="#toc">top</a></h3>
 <ul>
+    <li><strong>Multi-Company Support:</strong> The system supports multiple companies, enabling independent management of employees, attendance, payroll, and HR data for each organization.</li>
     <li><strong>Elegant User Interface:</strong> Modern dashboard with dark mode for eye comfort.</li>
     <li><strong>Charts & Reports:</strong> Monthly performance charts showing attendance, absence, vacation data, top employees, and departmental summaries.</li>
     <li><strong>Employee Management:</strong> Easily add, edit, and manage employee records, including attendance reports.</li>
@@ -94,12 +96,13 @@
             <li><strong>darkmode.css</strong>: Applies styling adjustments for the dark mode throughout the system.</li>
             <li><strong>mina.css</strong>: Provides general styles for the login page.</li>
             <li><strong>payrollcreate.css</strong>: Handles the styling for payroll creation forms and layouts.</li>
+            <li><strong>account.css</strong>: Handles the styling of my account page.</li>
         </ul>
        
         <hr>
 
         <h3 id="javascript"><strong>E) JavaScript Files</strong> - <a href="#toc">top</a></h3>
-        <p>The system includes three main JavaScript files:</p>
+        <p>The system includes 12 main JavaScript files:</p>
         <p><strong>Path:</strong> <code>public/dist/js</code></p>
         <ul>
             <li><strong>attendance.js</strong>: Handles attendance-related visualizations .</li>
@@ -113,6 +116,7 @@
             <li><strong>todo.js</strong>: Manages task-related charts in the dashboard.</li>
             <li><strong>vacation.js</strong>: Manages the vacation.</li>
             <li><strong>eye.js</strong>: for eye toggle in the login and register page.</li>
+            <li><strong>employee.js</strong>: for the section of role that is located in add employees or HR.</li>
         </ul>
 
         <hr>
@@ -129,7 +133,7 @@
         </ul>
         <p><strong>Path:</strong> <code>resources/views/backend</code></p>
         <ul>
-            <strong>(Folders)</strong>
+            <strong>(Folders) inside the folder the files of CRUD opearations</strong>
 
             <li><strong>dashboard.blade.php ->calender,charts,list,ToDo</strong></li>
             <li><strong>employees.blade.php</strong></li>
@@ -157,15 +161,15 @@
             <li><strong>CalendarController.php</strong>: Manages the Calendar in the navbar .</li>
             <li><strong>AttendanceController.php</strong>: Manages attendance-related logic.</li>
             <li><strong>PayrollController.php</strong>: Handles payroll calculations and exports.</li>
-            <li><strong>VacationController.php</strong>: Manages employee vacations and leave.</li>
+            <li><strong>VacationController.php</strong>: Manages employee vacations and its CRUD operations </li>
             <li><strong>ChartsController.php</strong>: Manages the visual charts in the navbar .</li>
-            <li><strong>EmployeeeController.php</strong>: Handles user-related actions, such as registration and profile management.</li>
-            <li><strong>JobController.php</strong>: Manages the jobs .</li>
-            <li><strong>JobHistoryController.php</strong>: Manages the job history.</li>
-            <li><strong>DepartmentController.php</strong>: Manages departmental information and employee assignments.</li>
-            <li><strong>ManagerController.php</strong>: Manages managers information.</li>
-            <li><strong>LeaveController.php</strong>: Processes leave requests and maintains leave records.</li>
-            <li><strong>OverTimeController.php</strong>: Manages bonus calculations and distributions.</li>
+            <li><strong>EmployeeeController.php</strong>: Handles user-related actions and its CRUD operations</li>
+            <li><strong>JobController.php</strong>: Manages the jobs and its CRUD operations .</li>
+            <li><strong>JobHistoryController.php</strong>: Manages the job history and its CRUD operations.</li>
+            <li><strong>DepartmentController.php</strong>: Manages departmental information and its CRUD operations.</li>
+            <li><strong>ManagerController.php</strong>: Manages managers information and its CRUD operations.</li>
+            <li><strong>LeaveController.php</strong>: Processes leave requests and its CRUD operations.</li>
+            <li><strong>OverTimeController.php</strong>: Manages bonus calculations and distributions and its CRUD operations.</li>
             <li><strong>ToDoController.php</strong>: Manages the creation, updating, and deletion of to-do tasks.</li>
             <li><strong>MyAccountController.php</strong>: Handles the account settings, updating.</li>
             
@@ -174,7 +178,9 @@
         <hr>
 
         <h3 id="model"><strong>H) Model Files</strong> - <a href="#toc">top</a></h3>
-        <p><strong>Path:</strong> <code>app/Models</code></p>
+        <p>models used for the search functionality and the retrieving of data based on company_id and paginate of the pages </p>
+                <p><strong>Path:</strong> <code>app/Models</code></p>
+
         <ul>
             <li><strong>User.php</strong>: Represents employee data.</li>
             <li><strong>Manager.php</strong>: Represents manager data.</li>
@@ -211,19 +217,20 @@
                 <li><strong>Set Up Environment:</strong>
                     <ol>
                         <li><strong>Create a Database:</strong> Use your preferred database management tool (e.g., phpMyAdmin) to create a new database for the application.</li>
-                        <li><strong>Configure the .env File:</strong> Locate the .env file in the source code and update the database name and other relevant environment variables (database credentials).</li>
+                        <li><strong>Configure (open) the .env File:</strong> Locate the .env file in the source code and update the database name and other (database credentials).</li>
                     </ol>
                 </li>
                 <li><strong>Install Dependencies:</strong>
-                    <p>Open your terminal and navigate to the project directory, then run the following command:</p>
-                    <pre>composer install</pre>
+                    <p>Open your terminal of the project and run the following command:</p>
+                    <pre>composer install</pre> <p>if you don't have it</p>
+
                 </li>
                 <li><strong>Run Migrations and Seeders:</strong>
                     <p>After installing dependencies, execute the following command in the command line interface (CLI) of the project:</p>
                     <pre>php artisan migrate --seed</pre>
                 </li>
                 <li><strong>Serve the Application:</strong>
-                    <p>Start the Laravel development server with:</p>
+                    <p>Start the Laravel development server with writing the command in the project terminal:</p>
                     <pre>php artisan serve</pre>
                 </li>
                 <li><strong>Access the Application:</strong>
@@ -234,3 +241,10 @@
             </ol>
             
             <hr>
+
+<h3 id="use"><strong>J) User Guide</strong> - <a href="#toc">top</a></h3>
+        <ol>
+            <p> <strong>advice when the system work:</strong>strong></p>
+            
+
+<hr>
