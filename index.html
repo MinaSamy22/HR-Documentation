@@ -60,6 +60,7 @@
         <h3 id="features"><strong>B) Key Features</strong> - <a href="#toc">top</a></h3>
 <ul>
     <li><strong>Multi-Company Support:</strong> The system supports multiple companies, enabling independent management of employees, attendance, payroll, and HR data for each organization.</li>
+    <li><strong>Admin Interface:</strong> A dedicated admin interface is included to create and delete companies, as well as create and remove admin accounts for each company.</li>
     <li><strong>Elegant User Interface:</strong> Modern dashboard with dark mode for eye comfort.</li>
     <li><strong>Charts & Reports:</strong> Monthly performance charts showing attendance, absence, vacation data, top employees, and departmental summaries.</li>
     <li><strong>Employee Management:</strong> Easily add, edit, and manage employee records, including attendance reports.</li>
@@ -97,6 +98,7 @@
             <li><strong>mina.css</strong>: Provides general styles for the login page.</li>
             <li><strong>payrollcreate.css</strong>: Handles the styling for payroll creation forms and layouts.</li>
             <li><strong>account.css</strong>: Handles the styling of my account page.</li>
+            <li><strong>admin.css</strong>: for styling the admin interface.</li>
         </ul>
        
         <hr>
@@ -125,15 +127,25 @@
         <ul>     
                    <strong>(Files)</strong>
             <li><strong>home.blade.php</strong></li>
-            <li><strong>welcome.blade.php</strong></li>
             <li><strong>register.blade.php</strong></li>
-            <li><strong>login.blade.php</strong></li>
+            <li><strong>login.blade.php</strong> The login page at the start of the system which navigates to the admin interface or HR interface</li>
+            <li><strong>admin_home.blade.php</strong> The home screen of admin interface </li>
             <li><strong>_message.blade.php</strong></li>
 
         </ul>
+         <p><strong>Path:</strong> <code>resources/views/admins</code></p>
+        <ul>
+            <strong>(Folders)</strong>
+            <li><strong>admin folder</strong> inside this admin_register file and index file (index for show and delete) </li>
+            <li><strong>companies folder</strong> inside this company_register file and index file (index for show and delete) </li>
+
+        </ul>
+
+
+
         <p><strong>Path:</strong> <code>resources/views/backend</code></p>
         <ul>
-            <strong>(Folders) inside the folder the files of CRUD opearations</strong>
+            <strong>(Folders) inside the folder the files of CRUD operations of the hr interface </strong>
 
             <li><strong>dashboard.blade.php ->calender,charts,list,ToDo</strong></li>
             <li><strong>employees.blade.php</strong></li>
@@ -156,7 +168,9 @@
         <h3 id="controller"><strong>G) Controller Files</strong> - <a href="#toc">top</a></h3>
         <p><strong>Path:</strong> <code>app/Http/Controllers</code></p>
         <ul>
-            <li><strong>AuthController.php</strong>: Manages authentication system.</li>
+            <li><strong>AdminController.php</strong>: Manages view and delete admins.</li>
+            <li><strong>CompanyController.php</strong>: Manages view and delete companies</li>
+            <li><strong>AuthController.php</strong>: Manages authentication system. of both admin and hr</li>
             <li><strong>DashboardController.php</strong>: Manages Dashboard and the visual charts.</li>
             <li><strong>CalendarController.php</strong>: Manages the Calendar in the navbar .</li>
             <li><strong>AttendanceController.php</strong>: Manages attendance-related logic.</li>
@@ -182,6 +196,8 @@
                 <p><strong>Path:</strong> <code>app/Models</code></p>
 
         <ul>
+            <li><strong>Admin.php</strong>: Represents admin data.</li>
+            <li><strong>Company.php</strong>: Represents company data and retrieving options.</li>
             <li><strong>User.php</strong>: Represents employee data.</li>
             <li><strong>Manager.php</strong>: Represents manager data.</li>
             <li><strong>Department.php</strong>: Represents different departments within the organization.</li>
