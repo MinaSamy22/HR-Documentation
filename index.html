@@ -67,6 +67,8 @@
     <li><strong>Attendance Tracking:</strong> Track attendance manually and generate reports for present, late, and absent employees.</li>
     <li><strong>Overtime Tracking:</strong> Calculate and track overtime hours automatically for payroll processing.</li>
     <li><strong>Leave & Vacation Management:</strong> Organize and manage leave requests and vacation tracking in an efficient system.</li>
+    <li><strong>Tax & Insurance:</strong> Handle tax & insurance with customizable rules. Each company can enable or disable tax & insurance impact on salary processing based on its policy.</li>
+    <li><strong>Leave & Vacation Management:</strong> Organize and manage leave requests and vacation tracking in an efficient system.</li>
     <li><strong>Payroll System:</strong> Real-time payroll management based on attendance, leaves, and overtime data.</li>
     <li><strong>Fully Responsive:</strong> Seamless operation across mobile, tablet, and desktop devices.</li>
     <li><strong>Dark Mode:</strong> Switch to dark mode for a sleek look and reduced eye strain during extended use.</li>
@@ -113,6 +115,9 @@
             <li><strong>darkmode.js</strong>: Manages dark mode functionality for charts and other elements.</li>
             <li><strong>dashboardlist.js</strong>: Controls the display and interactions of dashboard lists.</li>
             <li><strong>leave.js</strong>: Manages the leave.</li>
+            <li><strong>tax.js</strong>: Manages the taxes</li>
+            <li><strong>insurance.js</strong>: Manages the Insurance</li>
+            <li><strong>leave.js</strong>: Manages the leave.</li>
             <li><strong>payroll.js</strong>: Manages the payroll.</li>
             <li><strong>payrollcreate.js</strong>: Supports visual elements during payroll creation.</li>
             <li><strong>todo.js</strong>: Manages task-related charts in the dashboard.</li>
@@ -147,19 +152,21 @@
         <ul>
             <strong>(Folders) inside the folder the files of CRUD operations of the hr interface </strong>
 
-            <li><strong>dashboard.blade.php ->calender,charts,list,ToDo</strong></li>
-            <li><strong>employees.blade.php</strong></li>
-            <li><strong>managers.blade.php</strong></li>
-            <li><strong>departments.blade.php</strong></li>
-            <li><strong>jobss.blade.php</strong></li>
-            <li><strong>job-history.blade.php</strong></li>
-            <li><strong>layouts.blade.php</strong></li>
-            <li><strong>attendance.blade.php</strong></li>
-            <li><strong>payrolls.blade.php</strong></li>
-            <li><strong>vacations.blade.php</strong></li>
-            <li><strong>leaves.blade.php</strong></li>
-            <li><strong>bounas.blade.php</strong></li>
-            <li><strong>my-account.blade.php</strong></li>
+            <li><strong>dashboard ->calender,charts,list,ToDo</strong></li>
+            <li><strong>employees</strong></li>
+            <li><strong>managers</strong></li>
+            <li><strong>departments</strong></li>
+            <li><strong>jobss</strong></li>
+            <li><strong>job-history</strong></li>
+            <li><strong>layouts</strong></li>
+            <li><strong>attendance</strong></li>
+            <li><strong>tax</strong></li>
+            <li><strong>insurance</strong></li>
+            <li><strong>payrolls</strong></li>
+            <li><strong>vacations</strong></li>
+            <li><strong>leaves</strong></li>
+            <li><strong>bounas</strong></li>
+            <li><strong>my-account</strong></li>
 
         </ul>
 
@@ -183,6 +190,8 @@
             <li><strong>DepartmentController.php</strong>: Manages departmental information and its CRUD operations.</li>
             <li><strong>ManagerController.php</strong>: Manages managers information and its CRUD operations.</li>
             <li><strong>LeaveController.php</strong>: Processes leave requests and its CRUD operations.</li>
+            <li><strong>TaxController.php</strong>: Processes Tax requests and its CRUD operations.</li>
+            <li><strong>InsuranceController.php</strong>: Processes Insurance requests and its CRUD operations.</li>
             <li><strong>OverTimeController.php</strong>: Manages bonus calculations and distributions and its CRUD operations.</li>
             <li><strong>ToDoController.php</strong>: Manages the creation, updating, and deletion of to-do tasks.</li>
             <li><strong>MyAccountController.php</strong>: Handles the account settings, updating.</li>
@@ -205,6 +214,8 @@
             <li><strong>History.php</strong>: Represents job history within the organization.</li>
             <li><strong>Attendance.php</strong>: Tracks employee attendance records.</li>
             <li><strong>Leave.php</strong>: Handles employee leave requests.</li>
+            <li><strong>Tax.php</strong>: Handles employee Tax requests.</li>
+            <li><strong>Insurance.php</strong>: Handles employee Insurance requests.</li>
             <li><strong>Vacation.php</strong>: Manages vacation data for employees.</li>
             <li><strong>Time.php</strong>: Stores overtime hours (bonus) for payroll processing.</li>
             <li><strong>Payroll.php</strong>: Stores payroll-related records.</li>
@@ -227,7 +238,7 @@
 
         <h3 id="installation"><strong>J) Installation Guide</strong> - <a href="#toc">top</a></h3>
         <ol>
-            <p>Follow these clear, step-by-step installation instructions to set up your HR system:</p>
+            <p>Follow these clear, step-by-step installation instructions to set up your HR system on localhost:</p>
             <ol>
                 <li><strong>Download the Source Code:</strong> Download the ZIP file containing the source code of the HR system.</li>
                 <li><strong>Set Up Environment:</strong>
