@@ -53,7 +53,7 @@
 
         <h3 id="overview"><strong>A) Overview</strong> - <a href="#toc">top</a></h3>
         <p>
-    The Smart HR Management System is a comprehensive, user-friendly solution for streamlining HR processes across multiple organizations. Designed using the AdminLTE 3 framework, it provides a modern and intuitive interface. The system is suitable for organizations of all sizes, offering tools for attendance tracking, employee management, payroll generation, and now supporting multi-company functionality, allowing each company to manage its own set of employees, departments, and payroll independently within a single system. Each company can also configure its own internal policies such as working hours, working days, official holidays, late arrival penalties, half-day rules, and bonuses through a dedicated company policy page.
+    The Smart HR Management System is a comprehensive, user-friendly solution for streamlining HR processes across multiple organizations. It provides a modern and intuitive interface. The system is suitable for organizations of all sizes, offering tools for attendance tracking, employee management, overtime tracking, deductions, vacations, and payroll generation, and now supporting multi-company functionality, allowing each company to manage its own data independently within a single system. Each company can also configure its own internal policies such as late arrival deduction, half-day rules, working hours, working days, official holidays,  and bonus hours, through a dedicated company policy page.
         </p>
         <hr>
 
@@ -62,7 +62,7 @@
     <li><strong>Multi-Company Support:</strong> The system supports multiple companies, enabling independent management of employees, attendance, payroll, and HR data for each organization.</li>
     <li><strong>Company Policy Configuration:</strong> Each company can set up its own HR policies including working hours, working days, official vacations, late arrival deductions, half-day rules, and bonus policies from a dedicated policy management page.</li>
     <li><strong>Admin Interface:</strong> A dedicated admin interface is included to create and delete companies, as well as create and remove admin accounts for each company.</li>
-    <li><strong>Elegant User Interface:</strong> Modern dashboard with dark mode for eye comfort.</li>
+    <li><strong>Elegant HR Interface:</strong> Modern dashboard with dark mode for eye comfort.</li>
     <li><strong>Charts & Reports:</strong> Monthly performance charts showing attendance, absence, vacation data, top employees, and departmental summaries.</li>
     <li><strong>Employee Management:</strong> Easily add, edit, and manage employee records, including attendance reports.</li>
     <li><strong>Attendance Tracking:</strong> Track attendance manually and generate reports for present, late, and absent employees.</li>
@@ -73,7 +73,6 @@
     <li><strong>Fully Responsive:</strong> Seamless operation across mobile, tablet, and desktop devices.</li>
     <li><strong>Dark Mode:</strong> Switch to dark mode for a sleek look and reduced eye strain during extended use.</li>
     <li><strong>Calendar Integration:</strong> Integrated calendar to view key HR dates and deadlines easily.</li>
-    <li><strong>Full-Screen Mode:</strong> Enjoy a distraction-free experience with a full-screen option.</li>
     <li><strong>Secure Login System:</strong> Robust authentication with easy logout functionality to ensure account security.</li>
     <li><strong>Easy Customization:</strong> Built with Laravel, allowing for straightforward extensions and customizations to fit business needs.</li>
 </ul>
@@ -158,7 +157,6 @@
         </ul>
 
 
-
         <p><strong>Path:</strong> <code>resources/views/backend</code></p>
         <ul>
             <strong>(Folders) inside the folder the files of CRUD operations of the hr interface </strong>
@@ -170,7 +168,7 @@
             <li><strong>jobss</strong></li>
             <li><strong>job-history</strong></li>
             <li><strong>layouts</strong></li>
-            <li><strong>attendance ->include important file like attendanceseetings and company rules </strong></li>
+            <li><strong>attendance ->include important file like attendanceseetings for company rules </strong></li>
             <li><strong>tax</strong></li>
             <li><strong>insurance</strong></li>
             <li><strong>payrolls</strong></li>
@@ -249,7 +247,8 @@
         <hr>
 
 
-        <h3 id="installation"><strong>J) Installation Guide</strong> - <a href="#toc">top</a></h3>
+        <h3 id="installation"><strong>J) Installation Guide </strong> - <a href="#toc">top</a></h3>
+                    <strong>(if using localhost, if you are not using localhost, you don't need all of these steps)</strong>
         <ol>
             <p>Follow these clear, step-by-step installation instructions to set up your HR system on localhost:</p>
             <ol>
