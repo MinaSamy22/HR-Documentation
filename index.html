@@ -66,9 +66,8 @@
     <li><strong>Employee Management:</strong> Easily add, edit, and manage employee records, including attendance reports.</li>
     <li><strong>Attendance Tracking:</strong> Track attendance manually and generate reports for present, late, and absent employees.</li>
     <li><strong>Overtime Tracking:</strong> Calculate and track overtime hours automatically for payroll processing.</li>
-    <li><strong>Leave & Vacation Management:</strong> Organize and manage leave requests and vacation tracking in an efficient system.</li>
+    <li><strong>Deductions & Vacation Management:</strong> Organize and manage Deductions and vacation tracking in an efficient system.</li>
     <li><strong>Tax & Insurance:</strong> Handle tax & insurance with customizable rules. Each company can enable or disable tax & insurance impact on salary processing based on its policy.</li>
-    <li><strong>Leave & Vacation Management:</strong> Organize and manage leave requests and vacation tracking in an efficient system.</li>
     <li><strong>Payroll System:</strong> Real-time payroll management based on attendance, leaves, and overtime data.</li>
     <li><strong>Fully Responsive:</strong> Seamless operation across mobile, tablet, and desktop devices.</li>
     <li><strong>Dark Mode:</strong> Switch to dark mode for a sleek look and reduced eye strain during extended use.</li>
@@ -113,10 +112,9 @@
             <li><strong>Chart.js</strong>: Core library used for rendering charts in the dashboard.</li>
             <li><strong>darkmode.js</strong>: Manages dark mode functionality for charts and other elements.</li>
             <li><strong>dashboardlist.js</strong>: Controls the display and interactions of dashboard lists.</li>
-            <li><strong>leave.js</strong>: Manages the leave.</li>
+            <li><strong>deduction.js</strong>: Manages the deductions </li>
             <li><strong>tax.js</strong>: Manages the taxes</li>
             <li><strong>insurance.js</strong>: Manages the Insurance</li>
-            <li><strong>leave.js</strong>: Manages the leave.</li>
             <li><strong>payroll.js</strong>: Manages the payroll.</li>
             <li><strong>payrollcreate.js</strong>: Supports visual elements during payroll creation.</li>
             <li><strong>taxcreate.js</strong>: Supports visual elements during tax creation.</li>
@@ -127,7 +125,6 @@
             <li><strong>employee.js</strong>: for the section of role that is located in add employees or HR.</li>
             
             <li><strong>attendance settings [Folder] </strong>:  </li>
-            absent-policy.js    <br>
             bounas.js           <br>
             half-day.js         <br>
             holidays.js         <br>
@@ -177,7 +174,7 @@
             <li><strong>insurance</strong></li>
             <li><strong>payrolls</strong></li>
             <li><strong>vacations</strong></li>
-            <li><strong>leaves</strong></li>
+            <li><strong>deductions</strong></li>
             <li><strong>bounas</strong></li>
             <li><strong>my-account</strong></li>
 
@@ -203,7 +200,7 @@
             <li><strong>JobHistoryController.php</strong>: Manages the job history and its CRUD operations.</li>
             <li><strong>DepartmentController.php</strong>: Manages departmental information and its CRUD operations.</li>
             <li><strong>ManagerController.php</strong>: Manages managers information and its CRUD operations.</li>
-            <li><strong>LeaveController.php</strong>: Processes leave requests and its CRUD operations.</li>
+            <li><strong>DeductionController.php</strong>: Processes deduction requests and its CRUD operations.</li>
             <li><strong>TaxController.php</strong>: Processes Tax requests and its CRUD operations.</li>
             <li><strong>InsuranceController.php</strong>: Processes Insurance requests and its CRUD operations.</li>
             <li><strong>OverTimeController.php</strong>: Manages bonus calculations and distributions and its CRUD operations.</li>
@@ -228,7 +225,7 @@
             <li><strong>History.php</strong>: Represents job history within the organization.</li>
             <li><strong>Attendance.php</strong>: Tracks employee attendance records.</li
             <li><strong>AttendanceRule.php</strong>: Tracks attendance rules and company settings .</li>
-            <li><strong>Leave.php</strong>: Handles employee leave requests.</li>
+            <li><strong>Deduction.php</strong>: Handles employee deductions requests.</li>
             <li><strong>Tax.php</strong>: Handles employee Tax requests.</li>
             <li><strong>Insurance.php</strong>: Handles employee Insurance requests.</li>
             <li><strong>Vacation.php</strong>: Manages vacation data for employees.</li>
@@ -294,7 +291,11 @@
     <h5>3. Add the Jobs of the Company</h5>
 
     <h5>4. Add Employees and HR </h5>
-    <p>Once departments and jobs are set up, you can proceed to add employees and HR personnel. Assign each employee to a specific job and department.</p>
+
+                <p>Once departments and jobs are set up, you can proceed to add employees and HR personnel. Assign each employee to a specific job and department.</p>
+            
+    <h5>4. Add your company policy in attendance settings </h5>
+            
 
     <h4>Now, You’re Ready!</h4>
     <p>Now you can start to manage attendance, estimate payroll, track leaves, and perform other HR operations efficiently.</p>
