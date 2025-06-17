@@ -67,6 +67,7 @@
     <li><strong>Charts & Reports:</strong> Monthly performance charts showing attendance, absence, vacation data, top employees, and departmental summaries.</li>
     <li><strong>Employee Management:</strong> Easily add, edit, and manage employee records, including attendance reports.</li>
     <li><strong>Attendance Tracking:</strong> Track attendance manually and generate reports for present, late, and absent employees.</li>
+    <li><strong>Biometer Excel:</strong> Import the biometric Excel sheet, and it will be saved in the database.</li>
     <li><strong>Overtime Tracking:</strong> Calculate and track overtime hours automatically for payroll processing.</li>
     <li><strong>Deductions & Vacation Management:</strong> Organize and manage Deductions and vacation tracking in an efficient system.</li>
     <li><strong>Tax & Insurance:</strong> Handle tax & insurance with customizable rules. Each company can enable or disable tax & insurance impact on salary processing based on its policy.</li>
@@ -83,7 +84,7 @@
         <h3 id="technologies"><strong>C) Technologies Used</strong> - <a href="#toc">top</a></h3>
         <ul>
             <li><strong>Backend:</strong> Laravel 10 framework.</li>
-            <li><strong>Frontend:</strong> HTML5, CSS3, Bootstrap, JavaScript.</li>
+            <li><strong>Frontend:</strong> HTML5, CSS3, Bootstrap, AJAX, JavaScript.</li>
             <li><strong>Database:</strong> phpMyAdmin.</li>
             <li><strong>Icons:</strong> Font Awesome for icons.</li>
         </ul>
@@ -141,7 +142,7 @@
 
         <h3 id="database"><strong>F) Database</strong> - <a href="#toc">top</a></h3>
         <br>
-        <p>This project uses a structured MySQL database, designed and managed via <strong>phpMyAdmin</strong>. It consists of <strong> interconnected tables</strong>, following relational database principles to ensure data integrity and scalability. The schema supports core functionalities such as user management, roles, employee data, attendance tracking, payroll, and more.</p>
+        <p>This project uses a structured MySQL database, designed and managed via <strong>phpMyAdmin</strong>. It consists of <strong>interconnected tables</strong>, following relational database principles to ensure data integrity and scalability. The schema supports core functionalities such as user management, roles, employee data, attendance tracking, payroll, and more.</p>
 
         <p>
  <strong><br>
@@ -187,7 +188,7 @@
             <li><strong>jobss</strong></li>
             <li><strong>job-history</strong></li>
             <li><strong>layouts</strong></li>
-            <li><strong>attendance ->include important file like attendanceseetings for company rules </strong></li>
+            <li><strong>attendance ->include important file like attendanceseetings for company rules and biometric-excel </strong></li>
             <li><strong>tax</strong></li>
             <li><strong>insurance</strong></li>
             <li><strong>payrolls</strong></li>
@@ -209,6 +210,7 @@
             <li><strong>DashboardController.php</strong>: Manages Dashboard and the visual charts.</li>
             <li><strong>CalendarController.php</strong>: Manages the Calendar in the navbar .</li>
             <li><strong>AttendanceController.php</strong>: Manages attendance-related logic.</li>
+            <li><strong>AttendanceImportController.php</strong>: to import the biometric excel sheet.</li>
             <li><strong>AttendanceRulesController.php</strong>: Manages the rules of the company, like attendance rules, vacation rules.</li>
             <li><strong>PayrollController.php</strong>: Handles payroll calculations and exports.</li>
             <li><strong>VacationController.php</strong>: Manages employee vacations and its CRUD operations </li>
