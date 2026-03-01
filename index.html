@@ -1,5 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
+
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <title>Smart HR Management System Documentation</title>
@@ -7,16 +8,26 @@
     <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
     <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
-    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css"
+        media="screen, projection">
     <style type="text/css" media="screen">
-        p, table, hr, .box { margin-bottom:25px; }
-        .box p { margin-bottom:10px; }
+        p,
+        table,
+        hr,
+        .box {
+            margin-bottom: 25px;
+        }
+
+        .box p {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h3 class="center alt">&ldquo;Smart HR Management System Documentation&rdquo; by &ldquo;Mina Samy&rdquo; v2.0</h3>
+        <h3 class="center alt">&ldquo;Smart HR Management System Documentation&rdquo; by &ldquo;Mina Samy&rdquo; v2.0
+        </h3>
         <hr>
 
         <h1 class="center">Smart HR Management System</h1>
@@ -25,14 +36,14 @@
             <div class="span-6 colborder info prepend-1">
                 <p class="prepend-top">
                     <strong>
-                    Created: 25/10/2024<br>
-                    By: Mina Samy<br>
-                    Email: <a href="mailto:minasamy792@gmail.com">minasamy792@gmail.com</a>
+                        Created: 25/10/2024<br>
+                        By: Mina Samy<br>
+                        Email: <a href="mailto:minasamy792@gmail.com">minasamy792@gmail.com</a>
                     </strong>
                 </p>
             </div>
         </div>
-        
+
         <hr>
         <h2 id="toc" class="alt">Table of Contents</h2>
         <ol class="alpha">
@@ -41,7 +52,7 @@
             <li><a href="#technologies">Technologies Used</a></li>
             <li><a href="#cssStructure">CSS Files </a></li>
             <li><a href="#javascript">JavaScript Files</a></li>
-            <li><a href="#database">Database</a></li>
+            <!-- <li><a href="#database">Database</a></li> -->
             <li><a href="#blade">Blade </a></li>
             <li><a href="#controller">Controller Files</a></li>
             <li><a href="#model">Model Files</a></li>
@@ -49,36 +60,157 @@
             <li><a href="#installation">Installation Guide</a></li>
             <li><a href="#use">User Guide</a></li>
         </ol>
-        
+
         <hr>
 
         <h3 id="overview"><strong>A) Overview</strong> - <a href="#toc">top</a></h3>
         <p>
-    The Smart HR Management System is a comprehensive, user-friendly solution for streamlining HR processes across multiple organizations. It provides a modern and intuitive interface. The system is suitable for organizations of all sizes, offering tools for attendance tracking, employee management, overtime tracking, deductions, vacations, and payroll generation, and now supporting multi-company functionality, allowing each company to manage its own data independently within a single system. Each company can also configure its own internal policies such as late arrival deduction, half-day rules, working hours, working days, official holidays,  and bonus hours, through a dedicated company policy page.
+            The Smart HR Management System is a comprehensive, user-friendly solution for streamlining HR processes
+            across multiple organizations. It provides a modern and intuitive interface. The system is suitable for
+            organizations of all sizes, offering tools for attendance tracking, employee management, overtime tracking,
+            deductions, vacations, and payroll generation, and now supporting multi-company functionality, allowing each
+            company to manage its own data independently within a single system. Each company can also configure its own
+            internal policies such as late arrival deduction, half-day rules, working hours, working days, official
+            holidays, and bonus hours, through a dedicated company policy page.
         </p>
         <hr>
 
         <h3 id="features"><strong>B) Key Features</strong> - <a href="#toc">top</a></h3>
-<ul>
-    <li><strong>Multi-Company Support:</strong> The system supports multiple companies, enabling independent management of employees, attendance, payroll, and HR data for each organization.</li>
-    <li><strong>Company Policy Configuration:</strong> Each company can set up its own HR policies, including working hours, working days, official vacations, late arrival deductions, half-day rules, and bonus policies from a dedicated policy management page.</li>
-    <li><strong>Admin Interface:</strong> A dedicated admin interface is included to create and delete companies, as well as create and remove admin accounts for each company.</li>
-    <li><strong>Elegant HR Interface:</strong> Modern dashboard with dark mode for eye comfort.</li>
-    <li><strong>Charts & Reports:</strong> Monthly performance charts showing attendance, absence, vacation data, top employees, and departmental summaries.</li>
-    <li><strong>Employee Management:</strong> Easily add, edit, and manage employee records. You can also import employees from an Excel sheet and export all records as an Excel file.</li>
-    <li><strong>Attendance Tracking:</strong> Track attendance manually and generate reports for present, late, and absent employees.</li>
-    <li><strong>Biometer Excel:</strong> Import the biometric Excel sheet, and it will be saved in the database.</li>
-    <li><strong>Overtime Tracking:</strong> Calculate and track overtime hours automatically for payroll processing.</li>
-    <li><strong>Deductions & Vacation Management:</strong> Organize and manage Deductions and vacation tracking in an efficient system.</li>
-    <li><strong>Tax & Insurance:</strong> Handle tax & insurance with customizable rules. Each company can enable or disable tax & insurance impact on salary processing based on its policy.</li>
-    <li><strong>Payroll System:</strong> Real-time payroll management based on attendance, deductions, and overtime data, with company-specific rules applied.</li>
-    <li><strong>Payslip Report:</strong> Generate payslip to employee and apility to print it and download it as pdf file.</li>
-    <li><strong>Fully Responsive:</strong> Seamless operation across mobile, tablet, and desktop devices.</li>
-    <li><strong>Dark Mode:</strong> Switch to dark mode for a sleek look and reduced eye strain during extended use.</li>
-    <li><strong>Calendar Integration:</strong> Integrated calendar to view key HR dates and deadlines easily.</li>
-    <li><strong>Secure Login System:</strong> Robust authentication with easy logout functionality to ensure account security.</li>
-    <li><strong>Easy Customization:</strong> Built with Laravel, allowing for straightforward extensions and customizations to fit business needs.</li>
-</ul>
+
+        <ul>
+            <li><strong>Multi-Company Support:</strong> Manage unlimited companies with fully independent employees,
+                payroll, attendance, departments, jobs, and HR data.</li>
+            <li><strong>Role-Based Access Control:</strong> Three dedicated dashboards (Admin – HR – Employee) with
+                secure authentication and permission separation.</li>
+            <li><strong>Bilingual System:</strong> Full support for <strong>Arabic (RTL)</strong>, <strong>Urdu
+                    (RTL)</strong>, and <strong>English (LTR)</strong>.</li>
+            <li><strong>Reports & Exporting:</strong> Export attendance, payroll, and reports to <strong>PDF and
+                    Excel</strong>.</li>
+            <li><strong>Fully Responsive & Dark Mode:</strong> Optimized for all devices with optional dark theme.</li>
+            <li><strong>Built with Laravel:</strong> Clean, scalable architecture for easy customization and future
+                expansion.</li>
+        </ul>
+
+
+        <h4><strong>1) Admin Dashboard</strong></h4>
+
+        <ul>
+            <li><strong>System Overview Cards:</strong> Displays total number of companies, total employees across all
+                companies, total HR users, and total administrators.</li>
+
+            <li><strong>Interactive Statistics:</strong> Visual chart showing employee distribution by company, enabling
+                quick performance comparison and organizational insights.</li>
+
+            <li><strong>System management:</strong> Fast access buttons to:
+                <ul>
+                    <li>Add a new company</li>
+                    <li>Add a new admin user</li>
+                    <li>Manage companies</li>
+                    <li>Manage admins</li>
+                </ul>
+            </li>
+
+            <li><strong>Multi-Company Monitoring:</strong> Instantly track workforce size and system usage across all
+                registered companies.</li>
+
+            <li><strong>Secure Super Admin Access:</strong> Role-based authentication ensuring only authorized
+                administrators can access system-level controls.</li>
+
+        </ul>
+
+
+        <h4><strong>2) HR Interface</strong></h4>
+        <ul>
+            <li><strong>Dashboard:</strong> Overview of employees, attendance status (present, late, absent), and
+                monthly performance analytics.</li>
+
+            <li><strong>Main data management:</strong>
+                <ul>
+                    <li>Employee</li>
+                    <li>Managers</li>
+                    <li>Administrations</li>
+                    <li>Departments</li>
+                    <li>Jobs</li>
+                </ul>
+            </li>
+            <li><strong>Company News:</strong> Publish and manage company announcements and show this at dashboard of
+                both hr and employee interface.</li>
+            <li><strong>Employee Requests:</strong> Manage employee requests and submissions and show the history of
+                requests.</li>
+            <li><strong>Internal Messaging System:</strong> Direct announce from HR to employees.</li>
+            <li><strong>Performance Evaluation:</strong> Define evaluation criteria and assess employee performance.
+            </li>
+
+            <li><strong>Attendance:</strong>
+                <ul>
+                    <li>Manually attendance </li>
+                    <li>Attendance report</li>
+                    <li>Import excel sheet</li>
+                </ul>
+            </li>
+
+            <li><strong>Taxes & Insurance:</strong> Apply customizable tax and insurance percentages, with the ability
+                to deduct taxes from either the basic salary or allowances.</li>
+
+            <li><strong>Deductions:</strong> Configure salary deductions by fixed amount or by deducting days.</li>
+
+            <li><strong>Vacations:</strong> Configure vacation balances for employees and assign them individually.
+                Support two types of employees: employees with vacation balance and employees without vacation balance. (The
+                vacation balance is defined in the Company Policy settings.)</li>
+
+            <li><strong>Overtime Management:</strong> Automatic overtime calculation based on company policy settings.
+            </li>
+
+            <li><strong>Payroll:</strong>
+                <ul>
+                    <li>Payroll calculation</li>
+                    <li>Payslip reports</li>
+                    <li>Salary installments</li>
+                </ul>
+            </li>
+
+            <li><strong>Company Policy:</strong> Define working hours, working days, overtime rules, penalties, leave
+                policies, official holidays, and time thresholds for determining late arrival, half day, or absence.
+            </li>
+
+            <li><strong>Multi-Branch Support:</strong> Manage multiple company branches and transfer employees between
+                branches.</li>
+
+            <li><strong>Company Information:</strong> Configure company details and upload the company logo.</li>
+
+            <li><strong>Employee Archive:</strong> When an employee resigns and the resignation is approved, the
+                employee is transferred to the archive with the ability to restore them if needed.</li>
+
+        </ul>
+
+
+        <h4><strong>3) Employee Interface</strong></h4>
+        <ul>
+            <li><strong>Smart Dashboard:</strong> View present days, absence days, late days, attendance summary, latest
+                company news, and recent activity.</li>
+
+            <li><strong>Salary & Payslip:</strong> View detailed salary breakdown and access payslip records.</li>
+
+            <li><strong>Attendance & Absence:</strong> Track attendance, absences, and late records.</li>
+
+            <li><strong>Performance Evaluation:</strong> View performance results and ratings provided by HR.</li>
+
+            <li><strong>Company Policy:</strong> Access official company policies, working hours, overtime rules, and
+                leave regulations.</li>
+
+            <li><strong>Internal Messaging:</strong> receive messages directly from HR.</li>
+
+            <li><strong>Employee Requests:</strong> Submit and track various requests including:
+                <ul>
+                    <li>Attendance Request</li>
+                    <li>Vacation Request</li>
+                    <li>Overtime Request</li>
+                    <li>Early Leave Request</li>
+                    <li>Resignation Request</li>
+                </ul>
+            </li>
+            <li><strong>Account Settings:</strong> Manage profile data.</li>
+        </ul>
 
         <hr>
 
@@ -95,55 +227,69 @@
         <h3 id="cssStructure"><strong>D) CSS Files </strong> – <a href="#toc">Top</a></h3>
         <p>The system utilizes multiple CSS files to maintain structure and ensure a consistent style:</p>
         <p><strong>Path:</strong> <code>public/dist/css</code></p>
-        
+
         <ul>
-            <li><strong>calendar.css</strong>: Styles the calendar interface and related components.</li>
+            <li><strong>employeeinterface → dashboard.css:</strong> Contains the stylesheet responsible for styling and
+                enhancing the visual layout of the Employee Interface dashboard page.</li>
+            <li><strong>calendar.css</strong>: Styles the calendar page and related components.</li>
+            <li><strong>custom.css</strong>: Styles the sidebar and enabling rtl and ltr.</li>
             <li><strong>darkmode.css</strong>: Applies styling adjustments for the dark mode throughout the system.</li>
             <li><strong>mina.css</strong>: Provides general styles for the login page.</li>
             <li><strong>payrollcreate.css</strong>: Handles the styling for payroll creation forms and layouts.</li>
             <li><strong>account.css</strong>: Handles the styling of my account page.</li>
             <li><strong>admin.css</strong>: for styling the admin interface.</li>
-            <li><strong>payslip.css</strong>: for styling the payslip.</li>
+            <li><strong>dashboard.css</strong>: for styling the dashboard page at hr interface.</li>
+            <li><strong>attendance-rules.css</strong>: for styling the company policy page.</li>
+            <li><strong>admin-home.css</strong>: for styling the dashboard page of admin interface.</li>
+            <li><strong>payslip.css</strong>: for styling the payslip page.</li>
         </ul>
-       
+
         <hr>
 
         <h3 id="javascript"><strong>E) JavaScript Files</strong> - <a href="#toc">top</a></h3>
         <p><strong>Path:</strong> <code>public/dist/js</code></p>
         <ul>
             <li><strong>attendance.js</strong>: Handles attendance-related visualizations .</li>
+            <li><strong>attendance2.js</strong>: Handles another part of attendance.</li>
+            <li><strong>administration.js</strong>: Handles the administration of company.</li>
+
             <li><strong>bonus.js</strong>: Manages the bonus .</li>
+            <li><strong>branches.js</strong>: Manages the branches of company.</li>
             <li><strong>Chart.js</strong>: Core library used for rendering charts in the dashboard.</li>
             <li><strong>darkmode.js</strong>: Manages dark mode functionality for charts and other elements.</li>
             <li><strong>dashboardlist.js</strong>: Controls the display and interactions of dashboard lists.</li>
             <li><strong>deduction.js</strong>: Manages the deductions </li>
+            <li><strong>department.js</strong>: Manages the departments </li>
             <li><strong>tax.js</strong>: Manages the taxes</li>
+            <li><strong>jobs.js</strong>: Manages the jobs</li>
+            <li><strong>manager.js</strong>: Manages the managers</li>
+            <li><strong>news.js</strong>: Manages the news</li>
+            <li><strong>performance_criteria.js</strong>: Manages the performance criteria</li>
+            <li><strong>performance.js</strong>: Manages the performances</li>
+            <li><strong>job_history.js</strong>: Manages the job history</li>
             <li><strong>insurance.js</strong>: Manages the Insurance</li>
             <li><strong>payroll.js</strong>: Manages the payroll.</li>
             <li><strong>payrollcreate.js</strong>: Supports visual elements during payroll creation.</li>
-            <li><strong>taxcreate.js</strong>: Supports visual elements during tax creation.</li>
             <li><strong>insurancecreate.js</strong>: Supports visual elements during insurance creation.</li>
             <li><strong>todo.js</strong>: Manages task-related charts in the dashboard.</li>
             <li><strong>vacation.js</strong>: Manages the vacation.</li>
+            <li><strong>transfere.js</strong>: Manages the transfere employee feature.</li>
             <li><strong>eye.js</strong>: for eye toggle in the login and register page.</li>
             <li><strong>employee.js</strong>: for the section of role that is located in add employees or HR.</li>
             <li><strong>payslip.js</strong>: for the section of role that is located in payslip of employees.</li>
-            
-            <li><strong>attendance settings [Folder] </strong>:  </li>
-            bounas.js           <br>
-            half-day.js         <br>
-            holidays.js         <br>
-            lateDeduction.js    <br>
-            vacation-balance.js <br>
-            work-hours.js       <br>
-            working-days.js     <br>
 
-            
+            <li><strong>attendance settings [Folder] </strong>: </li>
+            holidays.js <br>
+            hours-days-vacation-bounas.js <br>
+            late-halfDeduction.js <br>
+
+
+
         </ul>
-                <hr>
+        <hr>
 
 
-        <h3 id="database"><strong>F) Database</strong> - <a href="#toc">top</a></h3>
+        <!-- <h3 id="database"><strong>F) Database</strong> - <a href="#toc">top</a></h3>
         <br>
         <p>This project uses a structured MySQL database, designed and managed via <strong>phpMyAdmin</strong>. It consists of <strong>interconnected tables</strong>, following relational database principles to ensure data integrity and scalability. The schema supports core functionalities such as user management, roles, employee data, attendance tracking, payroll, and more.</p>
 
@@ -159,107 +305,237 @@
 
 
 
-        <hr>
-        <h3 id="blade"><strong>G) Blade </strong> - <a href="#toc">top</a></h3>
+        <hr> -->
+        <h3 id="blade"><strong>F) Blade </strong> - <a href="#toc">top</a></h3>
         <p><strong>Path:</strong> <code>resources/views</code></p>
-        <ul>     
-                   <strong>(Files)</strong>
-            <li><strong>home.blade.php</strong></li>
-            <li><strong>register.blade.php</strong></li>
-            <li><strong>login.blade.php</strong> The login page at the start of the system which navigates to the admin interface or HR interface</li>
-            <li><strong>admin_home.blade.php</strong> The home screen of admin interface </li>
-            <li><strong>_message.blade.php</strong></li>
+        <ul>
+            <strong>(Files)</strong>
 
+            <li><strong>login.blade.php:</strong> The main authentication page of the system. It allows users to log in
+                and automatically redirects them to the appropriate interface (Admin or HR) based on their role.</li>
+
+            <li><strong>_message.blade.php:</strong> Responsible for displaying system messages
+                such as success alerts, and error notifications.</li>
         </ul>
-         <p><strong>Path:</strong> <code>resources/views/admins</code></p>
+
+        <p><strong>Admin interface Path:</strong> <code>resources/views/admins</code></p>
         <ul>
             <strong>(Folders)</strong>
-            <li><strong>admin folder</strong> inside this admin_register file and index file (index for show and delete) </li>
-            <li><strong>companies folder</strong> inside this company_register file and index file (index for show and delete) </li>
+
+            <li><strong>layouts:</strong> Contains the main layout files such as <code>app</code>, <code>sidebar</code>,
+                and <code>footer</code>, which define the overall structure and shared components of the Admin Interface
+                pages.</li>
+
+            <li><strong>home:</strong> Includes the <code>admin_home</code> file, which represents the main dashboard
+                (home page) of the Admin Interface.</li>
+
+            <li><strong>admin:</strong> Contains the <code>admin_register</code> file for creating new admin accounts
+                and the <code>index</code> file for displaying the list of registered administrators.</li>
+
+            <li><strong>companies:</strong> Includes the <code>company_register</code> file for adding new companies and
+                the <code>index</code> file for displaying and managing the companies list.</li>
 
         </ul>
 
-
-        <p><strong>Path:</strong> <code>resources/views/backend</code></p>
+        <p><strong>HR Interface Path:</strong> <code>resources/views/backend</code></p>
         <ul>
-            <strong>(Folders) inside the folder the files of CRUD operations of the hr interface </strong>
+            <strong>(Folders – Each folder contains full CRUD operations for HR management)</strong>
 
-            <li><strong>dashboard ->calender,charts,list,ToDo</strong></li>
-            <li><strong>employees</strong></li>
-            <li><strong>managers</strong></li>
-            <li><strong>departments</strong></li>
-            <li><strong>jobss</strong></li>
-            <li><strong>job-history</strong></li>
-            <li><strong>layouts</strong></li>
-            <li><strong>attendance ->include important file like attendanceseetings for company rules and biometric-excel </strong></li>
-            <li><strong>tax</strong></li>
-            <li><strong>insurance</strong></li>
-            <li><strong>payrolls</strong></li>
-            <li><strong>vacations</strong></li>
-            <li><strong>deductions</strong></li>
-            <li><strong>bounas</strong></li>
-            <li><strong>my-account</strong></li>
+            <li><strong>layouts:</strong> Shared layout files for the HR Interface (app, sidebar, footer).</li>
 
+            <li><strong>dashboard:</strong> Contains dashboard components such as calendar, charts, statistics cards,
+                employee lists, and To-Do sections.</li>
+
+            <li><strong>employees:</strong> Employee management (add, edit, view, archive).</li>
+
+            <li><strong>managers:</strong> Manage reporting managers.</li>
+
+            <li><strong>departments:</strong> Manage company departments.</li>
+
+            <li><strong>jobss:</strong> Manage job titles and positions.</li>
+
+            <li><strong>job-history:</strong> Track employee job history and promotions.</li>
+
+            <li>
+                <strong>attendance:</strong> Attendance management including:
+                <ul>
+                    <li>employee.blade (for assign manually Present, Late, Half Day, Absent)</li>
+                    <li>report.blade</li>
+                    <li>PDF.blade</li>
+                    <li>biometric-excel.blade</li>
+                    <li>attendance-rule.blade (for the company rules(policy))</li>
+                    <li>attendance-summary.blade (summary of company rules)</li>
+                </ul>
+            </li>
+
+            <li><strong>taxes:</strong> Tax configuration and payroll impact settings.</li>
+
+            <li><strong>insurance:</strong> Insurance configuration and payroll deductions.</li>
+
+            <li><strong>payrolls:</strong> Payroll generation, salary breakdown, payslip creation.</li>
+
+            <li><strong>vacations:</strong> Leave requests, balances, and approvals.</li>
+
+            <li><strong>deductions:</strong> Salary deductions management.</li>
+
+            <li><strong>bounas:</strong> Bonus management system.</li>
+
+            <li><strong>branches:</strong> Company branch management.</li>
+
+            <li><strong>locations:</strong> Manage company locations.</li>
+
+            <li><strong>messages:</strong> Internal communication between HR and employees.</li>
+
+            <li><strong>requests:</strong> Employee requests (leave, complaints, inquiries).</li>
+
+            <li><strong>performance-criteria:</strong> Define performance evaluation standards.</li>
+
+            <li><strong>performances:</strong> Employee performance evaluations.</li>
+
+            <li><strong>News:</strong> Company news publishing system.</li>
+
+            <li><strong>my-account:</strong> HR personal account settings.</li>
+
+        </ul>
+
+        <p><strong>Employee Interface Path:</strong> <code>resources/views/EmployeeInterface</code></p>
+
+        <ul>
+            <strong>(Folders)</strong>
+
+            <li><strong>layouts:</strong> Contains the main layout files such as <code>app</code>, <code>sidebar</code>,
+                and <code>footer</code>, which define the overall structure and shared components of the Employee
+                Interface pages.</li>
+
+            <li><strong>attendance:</strong> Contains the <code>index</code> file responsible for displaying the
+                employee’s attendance records and daily status.</li>
+
+            <li><strong>dashboard:</strong> Includes the main dashboard view with summary information, calendar display,
+                and company news section.</li>
+
+            <li><strong>messages:</strong> Contains the <code>inbox</code> file for viewing received messages and
+                communication details.</li>
+
+            <li><strong>my-account:</strong> Includes the <code>update</code> file where employees can manage and update
+                their personal account information.</li>
+
+            <li><strong>payrolls:</strong> Contains the <code>payslip</code> file for viewing salary details and
+                downloading payroll information in PDF format.</li>
+
+            <li><strong>performances:</strong> Includes the <code>index</code> and <code>view</code> files for reviewing
+                employee performance evaluations and related details.</li>
+
+            <li><strong>policy:</strong> Contains the <code>index</code> file where employees can review company
+                policies and regulations.</li>
+
+            <li><strong>requests:</strong> Includes subfolders for different request types such as
+                <strong>early-leave</strong>, <strong>extra</strong>, <strong>late</strong>,
+                <strong>resignation</strong>, and <strong>vacation</strong>. Each folder contains an <code>index</code>
+                file for submitting and tracking requests.
+            </li>
         </ul>
 
         <hr>
 
-        <h3 id="controller"><strong>H) Controller Files</strong> - <a href="#toc">top</a></h3>
-        <p><strong>Path:</strong> <code>app/Http/Controllers</code></p>
+        <h3 id="controller"><strong>G) Controller Files</strong> - <a href="#toc">top</a></h3>
+        <p><strong>Path:</strong> <code>app/Http/Controllers</code> – Contains all controller of both the Admin and HR
+            dashboards.</p>
         <ul>
             <li><strong>AdminController.php</strong>: Manages view and delete admins.</li>
             <li><strong>CompanyController.php</strong>: Manages view and delete companies</li>
-            <li><strong>AuthController.php</strong>: Manages authentication system. of both admin and hr</li>
-            <li><strong>DashboardController.php</strong>: Manages Dashboard and the visual charts.</li>
-            <li><strong>CalendarController.php</strong>: Manages the Calendar in the navbar .</li>
-            <li><strong>AttendanceController.php</strong>: Manages attendance-related logic.</li>
-            <li><strong>AttendanceImportController.php</strong>: to import the biometric excel sheet.</li>
-            <li><strong>AttendanceRulesController.php</strong>: Manages the rules of the company, like attendance rules, vacation rules.</li>
-            <li><strong>PayrollController.php</strong>: Handles payroll calculations and exports.</li>
-            <li><strong>VacationController.php</strong>: Manages employee vacations and its CRUD operations </li>
-            <li><strong>ChartsController.php</strong>: Manages the visual charts in the navbar .</li>
-            <li><strong>EmployeeeController.php</strong>: Handles user-related actions and its CRUD operations</li>
-            <li><strong>JobController.php</strong>: Manages the jobs and its CRUD operations .</li>
-            <li><strong>JobHistoryController.php</strong>: Manages the job history and its CRUD operations.</li>
-            <li><strong>DepartmentController.php</strong>: Manages departmental information and its CRUD operations.</li>
-            <li><strong>ManagerController.php</strong>: Manages managers information and its CRUD operations.</li>
-            <li><strong>DeductionController.php</strong>: Processes deduction requests and its CRUD operations.</li>
-            <li><strong>TaxController.php</strong>: Processes Tax requests and its CRUD operations.</li>
-            <li><strong>InsuranceController.php</strong>: Processes Insurance requests and its CRUD operations.</li>
-            <li><strong>OverTimeController.php</strong>: Manages bonus calculations and distributions and its CRUD operations.</li>
-            <li><strong>ToDoController.php</strong>: Manages the creation, updating, and deletion of to-do tasks.</li>
-            <li><strong>MyAccountController.php</strong>: Handles the account settings, updating.</li>
-            
+            <li><strong>AdministrationController.php</strong>: Manages view and delete administrations</li>
+            <li><strong>AuthController.php</strong>: Manages authentication for Admin and HR users.</li>
+            <li><strong>BranchController.php</strong>: Manages branches and their CRUD operations.</li>
+            <li><strong>CalendarController.php</strong>: Manages calendar functionality.</li>
+            <li><strong>ChartsController.php</strong>: Handles dashboard charts and statistics.</li>
+            <li><strong>CompanyController.php</strong>: Manages companies and their CRUD operations.</li>
+            <li><strong>CompanyInfoController.php</strong>: Manages company information settings.</li>
+            <li><strong>Controller.php</strong>: Base controller class.</li>
+            <li><strong>DashboardController.php</strong>: Controls dashboard views and analytics.</li>
+            <li><strong>DeductionController.php</strong>: Manages deductions and related CRUD operations.</li>
+            <li><strong>DepartmentController.php</strong>: Manages departments and their CRUD operations.</li>
+            <li><strong>EmployeeController.php</strong>: Handles employee management and CRUD operations.</li>
+            <li><strong>FinancialAnalysisController.php</strong>: Manages financial reports and analysis.</li>
+            <li><strong>HomeController.php</strong>: Controls home page routing.</li>
+            <li><strong>InsuranceController.php</strong>: Manages insurance records and operations.</li>
+            <li><strong>JobController.php</strong>: Manages jobs and their CRUD operations.</li>
+            <li><strong>JobHistoryController.php</strong>: Manages job history records.</li>
+            <li><strong>LocationController.php</strong>: Manages company locations.</li>
+            <li><strong>ManagerController.php</strong>: Manages managers and their CRUD operations.</li>
+            <li><strong>MessageController.php</strong>: Handles internal messaging system.</li>
+            <li><strong>MyAccountController.php</strong>: Manages user account settings.</li>
+            <li><strong>NewsController.php</strong>: Manages company news and announcements.</li>
+            <li><strong>OverTimeController.php</strong>: Handles overtime calculations and approvals.</li>
+            <li><strong>PaymentController.php</strong>: Manages payments and salary transactions.</li>
+            <li><strong>PayrollController.php</strong>: Handles payroll processing and exports.</li>
+            <li><strong>PerformanceController.php</strong>: Manages performance evaluations.</li>
+            <li><strong>PerformanceCriteriaController.php</strong>: Manages performance criteria settings.</li>
+            <li><strong>RequestController.php</strong>: Handles employee requests management.</li>
+            <li><strong>TaxController.php</strong>: Manages tax calculations and records.</li>
+            <li><strong>TodoController.php</strong>: Manages to-do tasks.</li>
+            <li><strong>VacationController.php</strong>: Manages vacation requests and balances.</li>
+        </ul>
+
+        <p><strong>Path:</strong> <code>app/Http/Controllers/EmployeesInterface</code> – Contains all controller of the
+            Employee dashboards.</p>
+        <ul>
+            <li><strong>EarlyLeaveController.php</strong>: Handles employee early leave requests.</li>
+            <li><strong>EmployeeAttendanceController.php</strong>: Manages employee attendance view and records.</li>
+            <li><strong>EmployeeCalendarController.php</strong>: Displays employee calendar and schedules.</li>
+            <li><strong>EmployeeHomeController.php</strong>: Controls employee dashboard/home page.</li>
+            <li><strong>EmployeeLateRemovalController.php</strong>: Handles late removal requests.</li>
+            <li><strong>EmployeeMyAccountController.php</strong>: Manages employee profile and account settings.</li>
+            <li><strong>EmployeeNotificationController.php</strong>: Handles employee notifications.</li>
+            <li><strong>EmployeePayrollController.php</strong>: Displays payroll details for employees.</li>
+            <li><strong>EmployeePerformanceController.php</strong>: Manages employee performance and evaluations.</li>
+            <li><strong>EmployeeVacationController.php</strong>: Handles vacation requests and tracking.</li>
+            <li><strong>ExtraTimeRequestController.php</strong>: Manages overtime/extra time requests.</li>
+            <li><strong>ResignationController.php</strong>: Handles employee resignation requests.</li>
         </ul>
 
         <hr>
 
-        <h3 id="model"><strong>I) Model Files</strong> - <a href="#toc">top</a></h3>
-        <p>models used for the search functionality and the retrieving of data based on company_id and paginate of the pages </p>
-                <p><strong>Path:</strong> <code>app/Models</code></p>
+        <h3 id="model"><strong>H) Model Files</strong> - <a href="#toc">top</a></h3>
+        <p>models used for the search functionality and the retrieving of data based on company_id and paginate of the
+            pages </p>
+        <p><strong>Path:</strong> <code>app/Models</code></p>
 
         <ul>
-            <li><strong>Admin.php</strong>: Represents admin data.</li>
-            <li><strong>Company.php</strong>: Represents company data and retrieving options.</li>
-            <li><strong>User.php</strong>: Represents employee data.</li>
-            <li><strong>Manager.php</strong>: Represents manager data.</li>
-            <li><strong>Department.php</strong>: Represents different departments within the organization.</li>
-            <li><strong>Job.php</strong>: Represents different jobs within the organization.</li>
-            <li><strong>History.php</strong>: Represents job history within the organization.</li>
-            <li><strong>Attendance.php</strong>: Tracks employee attendance records.</li>
-            <li><strong>AttendanceRule.php</strong>: Tracks attendance rules and company settings .</li>
-            <li><strong>Deduction.php</strong>: Handles employee deductions requests.</li>
-            <li><strong>Tax.php</strong>: Handles employee Tax requests.</li>
-            <li><strong>Insurance.php</strong>: Handles employee Insurance requests.</li>
-            <li><strong>Vacation.php</strong>: Manages vacation data for employees.</li>
-            <li><strong>Time.php</strong>: Stores overtime hours (bonus) for payroll processing.</li>
-            <li><strong>Payroll.php</strong>: Stores payroll-related records.</li>
-            <li><strong>Task.php</strong>: Manages task-related entries for the to-do list feature.</li>
+            <li><strong>Admin.php</strong></li>
+            <li><strong>Administration.php</strong></li>
+            <li><strong>Attendance.php</strong></li>
+            <li><strong>AttendanceRule.php</strong></li>
+            <li><strong>Branch.php</strong></li>
+            <li><strong>Company.php</strong></li>
+            <li><strong>Deduction.php</strong></li>
+            <li><strong>Department.php</strong></li>
+            <li><strong>EarlyLeaveRequest.php</strong></li>
+            <li><strong>ExtraTimeRequest.php</strong></li>
+            <li><strong>History.php</strong></li>
+            <li><strong>HrPermission.php</strong></li>
+            <li><strong>Insurance.php</strong></li>
+            <li><strong>Job.php</strong></li>
+            <li><strong>LateRemovalRequest.php</strong></li>
+            <li><strong>Location.php</strong></li>
+            <li><strong>Manager.php</strong></li>
+            <li><strong>Message.php</strong></li>
+            <li><strong>News.php</strong></li>
+            <li><strong>Payment.php</strong></li>
+            <li><strong>Payroll.php</strong></li>
+            <li><strong>PerformanceCriteria.php</strong></li>
+            <li><strong>PerformanceEvaluation.php</strong></li>
+            <li><strong>Resignation.php</strong></li>
+            <li><strong>Task.php</strong></li>
+            <li><strong>Tax.php</strong></li>
+            <li><strong>Time.php</strong></li>
+            <li><strong>User.php</strong></li>
+            <li><strong>Vacation.php</strong></li>
+            <li><strong>VacationRequest.php</strong></li>
         </ul>
 
         <hr>
 
-        <h3 id="credits"><strong>J) Sources and Packages</strong> - <a href="#toc">top</a></h3>
+        <h3 id="credits"><strong>I) Sources and Packages</strong> - <a href="#toc">top</a></h3>
         <ul>
             <li><strong>Icons:</strong> Font Awesome</li>
             <li><strong>Admin Template:</strong> AdminLTE 3</li>
@@ -271,28 +547,30 @@
         <hr>
 
 
-        <h3 id="installation"><strong>K) Installation Guide for (localhost)</strong> - <a href="#toc">top</a></h3>
-         <p><strong>Note:</strong> If you're installing the system on a live server (not localhost), you don't need all of these steps.</p>
+        <h3 id="installation"><strong>J) Installation Guide for (localhost)</strong> - <a href="#toc">top</a></h3>
+        <p><strong>Note:</strong>For installing the system on (localhost).</p>
         <ol>
             <p>Follow these clear, step-by-step installation instructions to set up your HR system on localhost:</p>
             <ol>
-                <li><strong>Download the Source Code:</strong> Download the ZIP file containing the source code of the HR system.</li>
+                <li><strong>Download the Source Code:</strong> Download the Source Code:</strong> Download the ZIP file containing the HR system source code, MySQL database file, documentation, and default admin credentials.</li> <br>
                 <li><strong>Set Up Environment:</strong>
                     <ol>
-                        <li><strong>Download Xampp or MAMP : </strong> for use localhost.</li>
-                        <li><strong>Create a Database:</strong> Use your preferred database management tool (e.g., phpMyAdmin) to create a new database for the application.</li>
-                        <li><strong>Configure (open) the .env File:</strong> Locate the .env file in the source code and update the database name and other (database credentials).</li>
+                        <li><strong>Install XAMPP or MAMP:</strong> Install a local server environment to run the
+                            application on localhost. After installation, start the Apache and MySQL services.</li>
+                        <li><strong>Import the Database:</strong> After extracting the project files, you will find two
+                            folders: <strong>Source Code</strong> and <strong>Database</strong>. Open the
+                            <strong>Database</strong> folder and locate the provided <code>.sql</code> file. Then open
+                            your preferred database management tool (e.g., phpMyAdmin), create a new database, and
+                            import the SQL file into it.
+                        </li>
                     </ol>
-                </li>
+                </li><br>
                 <li><strong>Install Dependencies:</strong>
-                    <p>Open your terminal of the project and run the following command:</p>
-                    <pre>composer install</pre> <p>if you don't have it</p>
+                    <p>Open the project folder in your terminal and run the following command to install all required
+                        dependencies:</p>
+                    <pre>composer install</pre>
+                </li>
 
-                </li>
-                <li><strong>Run Migrations and Seeders:</strong>
-                    <p>After installing dependencies, execute the following command in the command line interface (CLI) of the project:</p>
-                    <pre>php artisan migrate --seed</pre>
-                </li>
                 <li><strong>Serve the Application:</strong>
                     <p>Start the Laravel development server by writing the command in the project terminal:</p>
                     <pre>php artisan serve</pre>
@@ -302,28 +580,48 @@
                     <pre>like: http://127.0.0.1:8000</pre>
                 </li>
             </ol>
-            
+
             <hr>
 
-<h3 id="use"><strong>L) User Guide</strong> - <a href="#toc">top</a></h3>
-        <ol>
-            <p>After Login:</p>
+            <h3 id="use"><strong>K) User Guide</strong> - <a href="#toc">top</a></h3>
+            <ol>
+                    <h5>Step 1: Login to Admin Dashboard</h5>
+    <p>
+    First, you must log in to the <strong>Admin Dashboard</strong>.
+    The admin is responsible for creating the first company in the system.
+    The default login credentials (email and password) are provided in a TXT file included with the downloaded package.
+    </p>
 
-    <h5>1. Add the Managers of the Company</h5>
+    <h5>Step 2: Add a New Company</h5>
+    <p>
+        From the Admin Dashboard, create your first company.
+        After creating the company, you can assign HR users to it.
+    </p>
+    <h5>Step 3: Login to the Company (HR dashboard)</h5>
+    <p>
+Use the HR account credentials (email and password) that were created when adding the company to log in to the HR Dashboard.
+    <hr>
 
-    <h5>2. Add the Departments</h5>
+               <strong>After Login :</strong><br>
+<br>
 
-    <h5>3. Add the Jobs of the Company</h5>
+<h5>1. Add the Company Managers</h5>
 
-    <h5>4. Add Employees and HR </h5>
+<h5>2. Add the Departments</h5>
 
-                <p>Once departments and jobs are set up, you can proceed to add employees and HR personnel. Assign each employee to a specific job and department.</p>
-            
-    <h5>5. Add your company policy in attendance settings </h5>
-            
+<h5>3. Add the Job Positions</h5>
 
-    <h4>Now, You’re Ready!</h4>
-    <p>Now you can start to manage attendance, estimate payroll, track deductions, and perform other HR operations efficiently.</p>
-            
+<h5>4. Add Employees and HR Users</h5>
 
-<hr>
+<p>Once employees are added, they can log in to the Employee Dashboard.</p>
+
+<h5>5. Configure Your Company Policy in Attendance Settings Before Calculating Payroll</h5>
+
+
+                <h4>Now, You’re Ready!</h4>
+                <p>Now you can start to manage attendance, estimate payroll, track deductions, perform other HR
+                    operations efficiently ,and access employee dashboard.
+                </p>
+
+
+                <hr>
